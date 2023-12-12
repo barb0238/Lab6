@@ -1,0 +1,24 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {        
+        "aksClusterName":{
+            "value": "MyAKSCluster",
+            "metadata": {
+                "description": "The name of the Managed Cluster resource"
+            }
+        },
+        "location": {
+            "value": "canadacentral",
+            "metadata": {
+              "description": "The location of the Managed Cluster resource."
+            }
+        },
+        "dnsPrefix":{
+            "value": "myAKScluster",
+            "metadata": {
+                "description": "dns prefix for routing?"
+            }
+        }
+    }
+}
